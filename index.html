@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" href="./favicon.ico" type="image/x-icon" />
+    <link rel="shortcut icon" href="./favicon.ico" type="image/x-icon" />
+    <link rel="stylesheet" href="./css/style.css" />
+    <title></title>
+  </head>
+  <body>
+    <header class="header">
+        <div class="container">
+            <div class="logo">
+                <img src="./image/picture/explosive.png" alt="" class="logo__img">
+            </div>
+            <div class="header__title">Сапер</div>
+        </div>
+    </header>
+    <section class="content">
+        <div class="container container--block">
+            <div class="settings">
+              <div class="settings__container">
+                <label for="boardSize" class="label">Размер поля</label>
+                <input id="boardSize" type="range" min="9" max="16" value="0">
+                <div class="text text--margin">Уровень сложности</div>
+                <div class="settings__wrapper">
+                  <div class="settings__input">
+                    <input type="radio" id="easy" name="difficulty" value="0.1" class="difficulty">
+                    <label for="easy" class="label">Легкий</label> 
+                  </div>
+                  <div class="settings__input">
+                    <input type="radio" id="normal" name="difficulty" value="0.2" class="difficulty" checked>
+                    <label for="normal" class="label">Средний</label>
+                  </div>
+                  <div class="settings__input">
+                    <input type="radio" id="hard" name="difficulty" value="0.5" class="difficulty">
+                    <label for="hard" class="label">Сложный</label> 
+                  </div>
+                </div>
+              </div>
+              <a href="#!" class="btn">Новая игра</a>
+            </div>
+            <div class="content__wrapper">
+              <div class="board"></div>
+            </div>
+            <div class="endscreen"></div>
+        </div>
+    </section>
+    <footer class="footer">
+        <div class="container">
+            <div class="footer__text">Работа студентки 251 группы Симагиной А.В.</div>
+        </div>
+    </footer>
+    <script src="./js/script.js"></script>
+  </body>
+</html>
